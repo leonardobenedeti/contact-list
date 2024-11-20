@@ -8,7 +8,14 @@
             "name": "App",
             "request": "launch",
             "type": "dart",
-            "program": "lib/main.dart"
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "environment=development",
+                "--web-port=4200",
+                "--web-renderer web",
+                "--web-browser-flag=--disable-web-security",
+            ]
         },
         {
             "name": "Storybook",

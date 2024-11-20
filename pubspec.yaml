@@ -11,9 +11,13 @@ dependencies:
   storybook_flutter: ^0.14.1
 
 dev_dependencies:
+  flutter_bloc: ^8.0.1
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  http: ^0.13.6
+  intl: ^0.18.0
+  flutter_native_splash: ^2.4.3
 
 flutter:
   uses-material-design: true
@@ -26,3 +30,11 @@ flutter:
     - family: Helvetica
       fonts:
         - asset: assets/fonts/Helvetica.ttf
+
+flutter_native_splash:
+  color: "#0500FF"
+  image: assets/images/logo.png
+
+  android: false
+  ios: false
+  web: true

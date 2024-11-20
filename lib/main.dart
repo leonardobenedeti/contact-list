@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Contact List',
       theme: CustomTheme.themeData,
+      debugShowCheckedModeBanner: false,
       home: const EmployeeListBuilder(),
     );
   }

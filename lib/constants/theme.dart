@@ -4,7 +4,6 @@ class CustomTheme {
   static ThemeData get themeData => ThemeData(
         brightness: Brightness.light,
         fontFamily: 'Helvetica',
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         textTheme: CustomTheme.textTheme,
         useMaterial3: true,
       );

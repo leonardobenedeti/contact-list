@@ -1,4 +1,4 @@
-import 'package:contact_list/constants/assets.dart';
+import 'package:contact_list/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
@@ -9,9 +9,30 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       centerTitle: false,
       automaticallyImplyLeading: false,
-      title: Image.asset(
-        Assets.logo,
-        height: 34,
+      title: Row(
+        children: [
+          CircleAvatar(
+            backgroundColor: Colors.grey[300],
+            child: const Text('CG', style: TextStyle(color: Colors.black)),
+          ),
+          const Spacer(),
+          const Stack(
+            children: [
+              Icon(Icons.notifications_none, size: 28),
+              Positioned(
+                right: 0,
+                child: CircleAvatar(
+                  radius: 8,
+                  backgroundColor: CustomColors.bluePrimary,
+                  child: Text(
+                    '02',
+                    style: TextStyle(fontSize: 8, color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
